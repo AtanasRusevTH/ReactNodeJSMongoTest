@@ -59,7 +59,7 @@ export function RegistrationForm({ onRegister }) {
     const checkNickFreeAsync = async () => {
         
         try {
-            const response = await fetch('https://localhost:5000/api/auth/checkNickUnique', {
+            const response = await fetch('https://103.13.210.25:5000/api/auth/checkNickUnique', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -89,7 +89,7 @@ export function RegistrationForm({ onRegister }) {
     const checkMailFreeAsync = async () => {
         
         try {
-            const response = await fetch('https://localhost:5000/api/auth/checkMailUnique', {
+            const response = await fetch('https://103.13.210.25:5000/api/auth/checkMailUnique', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -137,7 +137,7 @@ export function RegistrationForm({ onRegister }) {
         console.log('Registering user DB requsted via http with:', userData);
 
         try {
-            const response = await fetch('https://localhost:5000/api/auth/register', {
+            const response = await fetch('https://103.13.210.25:5000/api/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -285,7 +285,7 @@ function LoginAndReg({ onLogin }) {
         console.log('Attempt User LogIn:', userLoginData);
 
         try {
-            const response = await fetch('https://localhost:5000/api/auth/login', {
+            const response = await fetch('https://103.13.210.25:5000/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

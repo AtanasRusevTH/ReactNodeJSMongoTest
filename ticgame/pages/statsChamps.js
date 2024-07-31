@@ -8,7 +8,7 @@ export function StatsData({ currUser }) {
   useEffect(() => {
     const fetchUserStats = async () => {
       try {
-        const url = `https://localhost:5000/api/stats/userStats/${currUser}`;
+        const url = `https://103.13.210.25:5000/api/stats/userStats/${currUser}`;
         const response = await fetch(url, {
           method: 'GET',
           headers: {
@@ -54,7 +54,7 @@ export function ChampsData({handleClose}) {
     const fetchChampsStats = async () => {
       setIsLoading(true);  // Start loading
       try {
-        const url = 'https://localhost:5000/api/stats/topPlayers';
+        const url = 'https://103.13.210.25:5000/api/stats/topPlayers';
         const response = await fetch(url, {
           method: 'GET',
           headers: {

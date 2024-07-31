@@ -13,7 +13,7 @@ const initWebSocketServer = require('./websocket');
 app.use(express.json()); // Body parser
 
 const corsOptions = {
-  origin: 'https://localhost:3000',
+  origin: 'https://103.13.210.25:3000',
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
@@ -52,7 +52,7 @@ app.get('/', (req, res) => {
 // Start server
 const PORT = process.env.PORT || 5000;
 const server = https.createServer(options, app).listen(PORT, () => {
-  console.log(`Server running on https://localhost:${PORT}`);
+  console.log(`Server running on https://103.13.210.25:${PORT}`);
 });
 
 // code to check user inactivity to log him out atuomatically after more than 3 hours of inactivity:

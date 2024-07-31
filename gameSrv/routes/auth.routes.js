@@ -52,7 +52,7 @@ router.post('/register', async (req, res) => {
 
 
 router.post('/checkNickUnique', async (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://localhost:3000"); // Set CORS 
+    res.setHeader("Access-Control-Allow-Origin", "https://103.13.210.25:3000"); // Set CORS 
     const { nickname } = req.body;
     console.log(nickname);
     try {        
@@ -71,7 +71,7 @@ router.post('/checkNickUnique', async (req, res) => {
 });
 
 router.post('/checkMailUnique', async (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://localhost:3000"); // Set CORS 
+    res.setHeader("Access-Control-Allow-Origin", "https://103.13.210.25:3000"); // Set CORS 
     const { email } = req.body;
     console.log(email);
     try {        

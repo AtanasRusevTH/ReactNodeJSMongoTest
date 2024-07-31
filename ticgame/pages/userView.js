@@ -249,7 +249,7 @@ function UserView({currUser, onLogOut, hideSimpleGame}) {
 
     if (null === socket) {
       // Initialize WebSocket connection only once
-      const newSocket = io('https://localhost:5000', { 
+      const newSocket = io('https://103.13.210.25:5000', { 
         autoConnect: true,
         reconnection: true,
         reconnectionAttempts: Infinity,
@@ -288,7 +288,7 @@ function UserView({currUser, onLogOut, hideSimpleGame}) {
     // to reduce the workload on the server side for users 
     // who obviously want to leave the game portal for now
     const handleBeforeUnload = async () => {
-      await fetch('https://localhost:5000/api/auth/logout', {
+      await fetch('https://103.13.210.25:5000/api/auth/logout', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -346,7 +346,7 @@ function UserView({currUser, onLogOut, hideSimpleGame}) {
     console.log('Attempt User LogOut:', currUser);
 
     try {
-      const response = await fetch('https://localhost:5000/api/auth/logout', {
+      const response = await fetch('https://103.13.210.25:5000/api/auth/logout', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'

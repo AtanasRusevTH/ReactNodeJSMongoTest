@@ -16,7 +16,7 @@ wss.on('connection', function connection(ws) {
 const initWebSocketServer = (server) => {
   const io = socketIo(server, {
     cors: {
-      origin: "https://localhost:3000",
+      origin: "https://103.13.210.25:3000",
       methods: ["GET", "POST"],
       allowedHeaders: ["Content-Type"],
       credentials: true       

@@ -16,7 +16,7 @@ export default function TicTacToePage() {
 
     const checkUserLoggedIn = async (currUserNick) => {
       try {
-          const response = await fetch('https://localhost:5000/api/auth/loginCheck', {
+          const response = await fetch('https://103.13.210.25:5000/api/auth/loginCheck', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'
