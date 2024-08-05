@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://user:password@103.13.210.25:27017/tic2db', {
+mongoose.connect('mongodb://xxxxxxxxx/tic2db', {
 });
 
 const db = mongoose.connection;
